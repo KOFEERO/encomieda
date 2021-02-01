@@ -1,0 +1,478 @@
+:root {
+	--primario:#6dc36d;
+	--secundario: #ffffbf;
+	--verde: #008000;
+	--blanco: #FFF;
+	--negro: #000;
+	--verdeOcuro: #10AE4B;
+	--colorFormulario: #D9F0EB;
+	--azul: #00f;
+}
+html {
+	font-size: 62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 1.6rem;
+	font-family: 'Lato', sans-serif;
+}
+img {
+	max-width: 100%;
+}
+h1 {
+	font-size: 4.8rem;
+}
+h2 {
+	font-size: 4rem;
+}
+h3 {
+	font-size: 3.2rem;
+}
+h4 {
+	font-size: 2.6rem;
+}
+a {
+	text-decoration: none;
+}
+
+/*------------------------* ESTILOS GLOBALES *------------------------*/
+.contenedor {
+	width: 90%;
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+/*------------------------* UTILIDADES *------------------------*/
+.centrar-texto {
+	text-align: center;
+}
+.separacion {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+.max-min {
+	max-width: 50rem;
+	margin: 0 auto;
+}
+.boton {
+	display: inline-block;
+	padding: 1rem 3rem;
+	background-color: var(--primario);
+	text-decoration: none;
+	border-radius: .4rem;
+	border: none;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	color: var(--blanco);
+	cursor: pointer;
+	text-align: center;
+}
+.primario {
+	display: inline-block;
+	width: 20rem;
+	margin: 2rem 0;
+	height: 4rem;
+}
+
+/*------------------------* HEADER *------------------------*/
+.sitio-header {
+	background-color: var(--secundario);
+}
+.barra {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.navegacion a {
+	text-decoration: none;
+	margin-right: 1.5rem;
+	color: var(--verde);
+	font-size: 1.7rem;
+}
+.navegacion a:last-of-type {
+	margin: 0;
+}
+.btn-rg {
+	background-color: var(--primario);
+	padding: .5rem 1rem;
+	color: var(--blanco);
+	border-radius: 4rem;
+}
+/*------------------------* BANNER PRESENTACIÓN *------------------------*/
+.banner-presentacion {
+	background: linear-gradient(261deg, rgba(0,0,0,.8) 100%, rgba(255,0,0,0) 100%), url(../fondos/fondo1.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 80vh; 
+}
+
+/*------------------------* TEXTO BANNER *------------------------*/
+.texto-banner {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.texto-banner h1 {
+	color: var(--blanco);
+	padding-top: 8rem;
+	align-self: flex-start;
+}
+.texto-banner p{
+	padding-bottom: 4rem;
+	font-size: 2rem;
+}
+.texto-banner h1, p {
+	color: var(--blanco);
+	margin: 4rem 0;
+}
+
+/*info banner*/
+.boton-info a {
+	transition: all 500ms ease;
+}
+.boton-info a:hover {
+	background-color: rgba(255,255,255, .90);
+	color: var(--negro);
+}
+
+
+/*------------------------* Servicio de Encomienda *------------------------*/
+.header-servicios {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 4rem;
+}
+.header-servicios h2 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: var(--verde);
+}
+.search {
+	display: flex;
+}
+.search input {
+	border: none;
+	padding: 1rem 2rem;
+}
+.search input:nth-child(1) {
+	background-color: #eee;
+	border-radius: 4rem 0 0 4rem;
+}
+.search input:nth-child(2) {
+	background-color: var(--primario);
+	border-radius: 0 4rem 4rem 0;
+}
+
+.servicios {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	column-gap: 2rem;
+	margin-top: 4rem;
+}
+.servicio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.servicio p {
+	color: var(--verde);
+	text-transform: uppercase;
+}
+/*------------------------* Registro de usuario *------------------------*/
+ fieldset {
+	font-size: 1.8rem;
+	line-height: 1.4;
+	border: none;
+}
+
+legend {
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.login {
+	box-shadow: -2px 2px 14px -2px rgba(0,0,0,0.75);
+	padding: 2rem;
+	border-radius: 1rem;
+}
+ .login label {
+	display: block;
+	font-size: 1.4rem;
+	line-height: 2;
+	margin-left: 2rem;
+	font-weight: bold;
+}
+.login input{
+	display: block;
+	width: 100%;
+	border: none;
+	padding: 2rem;
+	border: solid #eee 1px;
+	border-radius: 3rem;
+}
+.login input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+.clave-olvida, .cuenta-obtenida {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	line-height: 2;
+}
+.clave-olvida a, .cuenta-obtenida a {
+	text-decoration: none;
+	font-size: 1.6rem;
+	text-align: center;
+	color: var(--verde);
+}
+.registro-usuario {
+	padding-top: 4rem; 
+	margin-bottom: 4rem;
+}
+.registro-usuario h2 {
+	text-transform: uppercase;
+	font-family: 'PT Sans', sans-serif;
+}
+
+/*------------------------* FOOTER *------------------------*/
+
+.sitio-footer {
+	background-color: var(--secundario);
+	color: var(--verde);
+	height: 20rem;
+	display: flex;
+	margin-top: 4rem;
+}
+.derechos {
+	display: flex;
+	justify-content: space-between;
+}
+.copy {
+	color: var(--verde);
+}
+
+.redes-contacto {
+	display: flex;
+	justify-content: center;
+}
+
+.redes {
+	font-size: 2rem;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	color: var(--blanco);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1rem;
+	transition: all .3s; 
+}
+.redes:hover {
+	background-color: rgba(221, 189, 255, .2);
+	color: var(--negro);
+}
+.icon-facebook {
+	background-color: #3b5998;
+}
+.icon-instagram {
+	background-color: #3f729b;
+}
+
+
+
+
+/*------------------------* CONTACTO *------------------------*/
+.contacto {
+	display: flex;
+	justify-content: center;
+}
+.campos-contacto {
+	width: min(70rem, 100%);
+	padding: 2rem;
+	box-shadow: 0px 2px 14px -4px rgba(0,0,0,0.75);
+}
+.campos-contacto label, .campos-contacto input {
+	display: block;
+	line-height: 2;
+}
+.campos-contacto input:not(.btn-c),  .campos-contacto textarea{
+	width: 100%;
+	padding: 2rem;
+	border: none;
+	border-radius: 4rem;
+	background-color: #eee;
+}
+.btn-c {
+	border:none;
+	background-color: var(--primario);
+	padding: 1rem 2rem;
+	border-radius: 4rem;
+	color: var(--blanco);
+	margin-top: 1rem;
+}
+
+/*------------------------* ANUNCIO CONTRATISTA *------------------------*/
+
+/*------------------------* MENU *------------------------*/
+.menu, .submenu {
+	list-style: none;
+}
+.menu {
+	display: flex;
+}
+.menu__link {
+	display: block;
+	padding: 1rem;
+}
+.menu__link:hover {
+	color: var(--negro);
+}
+.menu__link, .submenu__link {
+	transition: color .3s ease;
+}
+.menu__link .fas {
+	padding-left: .3rem;
+}
+.menu__items {
+	position: relative;
+}
+.menu__items:hover .submenu{
+	display: block;
+}
+.submenu {
+	text-align: center;
+	white-space: nowrap;
+	position: absolute;
+	background-color: var(--secundario);
+	padding: 2rem;
+	border-radius: .2rem;
+	display: none;
+	transition: all .3s ease;
+}
+.submenu__link {
+	line-height: 2;
+	display: block;
+	padding: 1rem;
+	width: 100%;
+	border-bottom: solid 2px var(--verdeOcuro);
+}
+.submenu__link:hover {
+	color: var(--negro);
+}
+
+/*------------------------* CREAR ANUNCIO *------------------------*/
+
+.anuncio {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-shadow: -1px -1px 10px 0px rgba(0,0,0,0.75);
+	margin-top: 2rem;
+	border-radius: .4rem;
+
+}
+.anuncio__titulo {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 2rem;
+}
+
+.crear-anuncio {
+	width: 100%;
+	padding: 2rem;
+}
+.crear-anuncio__campo {
+	display: block;
+	width: 100%;
+	border: none;
+	padding: 2rem;
+	font-size: 1.4rem;
+	background-color: var(--colorFormulario);
+	margin-top: 3rem;;
+	border-radius: .3rem;
+}
+
+.select-css {
+	display: block;
+	border: solid 1px var(--verdeOcuro);
+	padding: 1rem;
+	width: 50%;
+	margin-top: 2rem;
+	border-radius: .4rem;
+	font-size: 1.6rem;
+}
+.textarea {
+	font-size: 1.8rem;
+}
+
+.comentario {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.comentario_v {
+	margin-top: 2rem;
+}
+.comentario__texto {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	margin-left: 1rem;
+}
+.primario {
+	margin-top: 2rem;
+}
+
+
+/*------------------------* PUBLICIACIONES *------------------------*/
+
+.publicaciones__usuario {
+
+}
+.publicacion {
+	width: 100%;
+	border-bottom: solid 1px var(--verde);
+	padding: 2rem 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	transition: transform .1s;
+	
+	cursor: pointer;
+}
+.publicacion:hover {
+	transform: scale(1.1);
+	border-left: 4px var(--verde) solid;
+	border-bottom: none;
+
+}
+.publicacion p {
+	color: var(--negro);
+	margin: 0;
+	font-size: 1.8rem;
+	line-height: 1.6;
+
+}
+.publicacion__estado i, .publicacion__usuario i {
+	color: var(--verde);
+	margin-right: .6rem;
+}
+
+
+.publicaciones {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	margin-top: 4rem;
+}
